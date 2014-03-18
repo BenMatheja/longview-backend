@@ -18,14 +18,16 @@ $id = uniqid();
 move_uploaded_file($_FILES['data']['tmp_name'], './json_out/json' . $id . '.gz');
 $json_array = uncompressToJson('./json_out/json' . $id . '.gz');
 
+date_default_timezone_set("Europe/Berlin");
+$insert = 'insert'.date('H:i:s',time());
 $connection = new MongoClient( "mongodb://suchtundordnung.de");
 $db = $connection->rasp_status;
-$collection = $db->longview;
+$collection = $db->$insert;
 $collection->insert($json_array);
 
 
 
 //debug out for longview client
-echo '{"via":"55","sleep":30, "chatty":"yes"}';
+echo '{"via":"55","sleep":60, "chatty":"yes"}';
 ?>
 

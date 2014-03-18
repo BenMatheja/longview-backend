@@ -7,5 +7,10 @@
  */
 $connection = new MongoClient( "mongodb://suchtundordnung.de");
 if($connection) echo "connected to mongodb";
-$db = $connection->rasp_status->longview;
-echo $db->count();
+echo '<br>';
+$db = $connection->selectDB('rasp_status');
+$list = $db->listCollections();
+foreach ($list as $collection){
+    echo "found $collection";
+    echo '<br>';
+}
