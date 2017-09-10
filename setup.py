@@ -11,7 +11,7 @@ def read(fname):
 setup(
     name='longview-backend',
     version='0.00.01',
-    packages=['longview', 'longview.managers'],
+    packages=[''],
     author='Ben Matheja',
     author_email='post@benmatheja.de',
     license='BSD',

@@ -1,0 +1,551 @@
+2017-09-10 11:51:17 [46155:gunicorn.error:247] [INFO] Starting gunicorn 19.7.1
+2017-09-10 11:51:17 [46155:gunicorn.error:247] [INFO] Listening at: http://192.168.178.24:5000 (46155)
+2017-09-10 11:51:17 [46155:gunicorn.error:247] [INFO] Using worker: sync
+2017-09-10 11:51:17 [46159:gunicorn.error:247] [INFO] Booting worker with pid: 46159
+2017-09-10 11:51:45 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:51:45 +0200] "POST / HTTP/1.1" 404 233 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:52:45 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:52:45 +0200] "POST / HTTP/1.1" 404 233 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:54:01 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:54:01 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:55:02 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:55:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:56:02 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:56:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:57:02 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:57:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:58:02 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:58:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:59:02 [46159:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:11:59:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 11:59:21 [46159:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 11:59:32 [46159:gunicorn.error:247] [INFO] Worker exiting (pid: 46159)
+2017-09-10 11:59:32 [47399:gunicorn.error:247] [INFO] Booting worker with pid: 47399
+2017-09-10 11:59:38 [47399:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 11:59:47 [47399:gunicorn.error:247] [INFO] Worker exiting (pid: 47399)
+2017-09-10 11:59:47 [47428:gunicorn.error:247] [INFO] Booting worker with pid: 47428
+2017-09-10 11:59:50 [47428:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:00:02 [47428:gunicorn.error:247] [INFO] Worker exiting (pid: 47428)
+2017-09-10 12:00:02 [47434:gunicorn.error:247] [INFO] Booting worker with pid: 47434
+2017-09-10 12:00:02 [47434:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:00:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:00:13 [47434:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:00:17 [47434:gunicorn.error:247] [INFO] Worker exiting (pid: 47434)
+2017-09-10 12:00:17 [47438:gunicorn.error:247] [INFO] Booting worker with pid: 47438
+2017-09-10 12:01:02 [47438:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:01:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:01:57 [47438:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:02:02 [47438:gunicorn.error:247] [INFO] Worker exiting (pid: 47438)
+2017-09-10 12:02:02 [47449:gunicorn.error:247] [INFO] Booting worker with pid: 47449
+2017-09-10 12:02:02 [47449:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:02:02 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:02:53 [47449:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:03:02 [47449:gunicorn.error:247] [INFO] Worker exiting (pid: 47449)
+2017-09-10 12:03:03 [47456:gunicorn.error:247] [INFO] Booting worker with pid: 47456
+2017-09-10 12:03:03 [47456:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:03:03 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:04:02 [47456:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:04:03 [47456:gunicorn.error:247] [INFO] Worker exiting (pid: 47456)
+2017-09-10 12:04:03 [47524:gunicorn.error:247] [INFO] Booting worker with pid: 47524
+2017-09-10 12:04:03 [47524:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:04:03 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:05:03 [47524:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:05:03 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:05:31 [47524:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:05:33 [47524:gunicorn.error:247] [INFO] Worker exiting (pid: 47524)
+2017-09-10 12:05:33 [47632:gunicorn.error:247] [INFO] Booting worker with pid: 47632
+2017-09-10 12:06:03 [47632:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:06:03 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:07:03 [47632:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:07:03 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:07:34 [47632:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:07:48 [47632:gunicorn.error:247] [INFO] Worker exiting (pid: 47632)
+2017-09-10 12:07:48 [47656:gunicorn.error:247] [INFO] Booting worker with pid: 47656
+2017-09-10 12:08:03 [47656:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:08:03 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:08:14 [47656:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:08:18 [47656:gunicorn.error:247] [INFO] Worker exiting (pid: 47656)
+2017-09-10 12:08:18 [47660:gunicorn.error:247] [INFO] Booting worker with pid: 47660
+2017-09-10 12:09:03 [47660:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:09:03 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:09:23 [47660:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:09:33 [47660:gunicorn.error:247] [INFO] Worker exiting (pid: 47660)
+2017-09-10 12:09:33 [47669:gunicorn.error:247] [INFO] Booting worker with pid: 47669
+2017-09-10 12:09:42 [47669:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:09:49 [47669:gunicorn.error:247] [INFO] Worker exiting (pid: 47669)
+2017-09-10 12:09:49 [47675:gunicorn.error:247] [INFO] Booting worker with pid: 47675
+2017-09-10 12:10:03 [47675:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:10:03 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:11:03 [47675:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:11:03 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:12:04 [47675:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:12:04 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:13:04 [47675:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:13:04 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:14:04 [47675:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:14:04 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:14:04 [47675:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:14:19 [47675:gunicorn.error:247] [INFO] Worker exiting (pid: 47675)
+2017-09-10 12:14:19 [47727:gunicorn.error:247] [INFO] Booting worker with pid: 47727
+2017-09-10 12:14:34 [47727:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:12:14:34 +0200] "POST /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 12:14:50 [47727:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:15:04 [47727:gunicorn.error:247] [INFO] Worker exiting (pid: 47727)
+2017-09-10 12:15:04 [47736:gunicorn.error:247] [INFO] Booting worker with pid: 47736
+2017-09-10 12:15:04 [47736:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:15:04 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:15:09 [47736:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:15:19 [47736:gunicorn.error:247] [INFO] Worker exiting (pid: 47736)
+2017-09-10 12:15:19 [47739:gunicorn.error:247] [INFO] Booting worker with pid: 47739
+2017-09-10 12:16:04 [47739:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:16:04 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:17:04 [47739:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:17:04 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:18:04 [47739:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:18:04 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:19:04 [47739:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:19:04 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:19:28 [47739:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:19:34 [47739:gunicorn.error:247] [INFO] Worker exiting (pid: 47739)
+2017-09-10 12:19:34 [47794:gunicorn.error:247] [INFO] Booting worker with pid: 47794
+2017-09-10 12:20:04 [47794:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:20:04 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:20:29 [47794:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:20:34 [47794:gunicorn.error:247] [INFO] Worker exiting (pid: 47794)
+2017-09-10 12:20:34 [47850:gunicorn.error:247] [INFO] Booting worker with pid: 47850
+2017-09-10 12:20:48 [47850:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:20:50 [47850:gunicorn.error:247] [INFO] Worker exiting (pid: 47850)
+2017-09-10 12:20:50 [47852:gunicorn.error:247] [INFO] Booting worker with pid: 47852
+2017-09-10 12:21:04 [47852:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:21:04 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:22:05 [47852:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:22:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:23:05 [47852:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:23:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:24:05 [47852:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:24:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:25:00 [47852:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:25:05 [47852:gunicorn.error:247] [INFO] Worker exiting (pid: 47852)
+2017-09-10 12:25:05 [47876:gunicorn.error:247] [INFO] Booting worker with pid: 47876
+2017-09-10 12:25:05 [47876:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:25:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:25:48 [47876:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:25:50 [47876:gunicorn.error:247] [INFO] Worker exiting (pid: 47876)
+2017-09-10 12:25:50 [47883:gunicorn.error:247] [INFO] Booting worker with pid: 47883
+2017-09-10 12:25:52 [47883:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:26:05 [47883:gunicorn.error:247] [INFO] Worker exiting (pid: 47883)
+2017-09-10 12:26:05 [47888:gunicorn.error:247] [INFO] Booting worker with pid: 47888
+2017-09-10 12:26:05 [47888:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:26:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:27:05 [47888:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:27:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:28:05 [47888:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:28:05 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:28:16 [47888:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:28:20 [47888:gunicorn.error:247] [INFO] Worker exiting (pid: 47888)
+2017-09-10 12:28:20 [47902:gunicorn.error:247] [INFO] Booting worker with pid: 47902
+2017-09-10 12:29:06 [47902:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:29:06 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:30:06 [47902:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:30:06 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:31:06 [47902:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:31:06 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:31:32 [47902:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:31:36 [47902:gunicorn.error:247] [INFO] Worker exiting (pid: 47902)
+2017-09-10 12:31:36 [47926:gunicorn.error:247] [INFO] Booting worker with pid: 47926
+2017-09-10 12:31:36 [47926:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 26)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 26
+    file = request.files.get('json.gz').
+                                       ^
+SyntaxError: invalid syntax
+2017-09-10 12:32:06 [47926:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:32:06 +0200] "POST /longview HTTP/1.1" 500 896 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:32:10 [47926:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:32:21 [47926:gunicorn.error:247] [INFO] Worker exiting (pid: 47926)
+2017-09-10 12:32:21 [47932:gunicorn.error:247] [INFO] Booting worker with pid: 47932
+2017-09-10 12:33:06 [47932:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:33:06 +0200] "POST /longview HTTP/1.1" 500 291 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:33:59 [47932:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:34:06 [47932:gunicorn.error:247] [INFO] Worker exiting (pid: 47932)
+2017-09-10 12:34:06 [47947:gunicorn.error:247] [INFO] Booting worker with pid: 47947
+2017-09-10 12:34:06 [47947:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:34:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:34:56 [47947:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:35:06 [47947:gunicorn.error:247] [INFO] Worker exiting (pid: 47947)
+2017-09-10 12:35:06 [47956:gunicorn.error:247] [INFO] Booting worker with pid: 47956
+2017-09-10 12:35:06 [47956:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 26)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 26
+    app.logger.debug(request.files.)
+                                   ^
+SyntaxError: invalid syntax
+2017-09-10 12:35:06 [47956:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:35:06 +0200] "POST /longview HTTP/1.1" 500 896 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:36:06 [47956:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:36:06 +0200] "POST /longview HTTP/1.1" 500 896 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:36:07 [47956:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:36:21 [47956:gunicorn.error:247] [INFO] Worker exiting (pid: 47956)
+2017-09-10 12:36:21 [47968:gunicorn.error:247] [INFO] Booting worker with pid: 47968
+2017-09-10 12:37:06 [47968:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:37:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:37:43 [47968:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:37:51 [47968:gunicorn.error:247] [INFO] Worker exiting (pid: 47968)
+2017-09-10 12:37:51 [47984:gunicorn.error:247] [INFO] Booting worker with pid: 47984
+2017-09-10 12:38:06 [47984:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:38:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:38:38 [47984:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:38:51 [47984:gunicorn.error:247] [INFO] Worker exiting (pid: 47984)
+2017-09-10 12:38:51 [48001:gunicorn.error:247] [INFO] Booting worker with pid: 48001
+2017-09-10 12:39:06 [48001:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:39:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:39:23 [48001:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:39:36 [48001:gunicorn.error:247] [INFO] Worker exiting (pid: 48001)
+2017-09-10 12:39:36 [48008:gunicorn.error:247] [INFO] Booting worker with pid: 48008
+2017-09-10 12:39:50 [48008:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:39:52 [48008:gunicorn.error:247] [INFO] Worker exiting (pid: 48008)
+2017-09-10 12:39:52 [48017:gunicorn.error:247] [INFO] Booting worker with pid: 48017
+2017-09-10 12:40:06 [48017:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:40:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:41:06 [48017:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:41:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:41:14 [48017:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 12:41:21 [48017:gunicorn.error:247] [INFO] Worker exiting (pid: 48017)
+2017-09-10 12:41:21 [48073:gunicorn.error:247] [INFO] Booting worker with pid: 48073
+2017-09-10 12:42:06 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:42:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:43:06 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:43:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:44:06 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:44:06 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:45:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:45:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:46:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:46:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:47:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:47:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:48:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:48:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:49:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:49:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:50:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:50:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:51:07 [48073:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:51:07 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:57:03 [46155:gunicorn.error:238] [CRITICAL] WORKER TIMEOUT (pid:48073)
+2017-09-10 12:57:03 [48073:gunicorn.error:247] [INFO] Worker exiting (pid: 48073)
+2017-09-10 12:57:03 [48104:gunicorn.error:247] [INFO] Booting worker with pid: 48104
+2017-09-10 12:57:41 [48104:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:57:41 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:58:27 [46155:gunicorn.error:247] [INFO] Handling signal: int
+2017-09-10 12:58:27 [48104:gunicorn.error:247] [INFO] Worker exiting (pid: 48104)
+2017-09-10 12:58:27 [46155:gunicorn.error:247] [INFO] Shutting down: Master
+2017-09-10 12:58:33 [48174:gunicorn.error:247] [INFO] Starting gunicorn 19.7.1
+2017-09-10 12:58:33 [48174:gunicorn.error:247] [INFO] Listening at: http://192.168.178.24:5000 (48174)
+2017-09-10 12:58:33 [48174:gunicorn.error:247] [INFO] Using worker: sync
+2017-09-10 12:58:33 [48179:gunicorn.error:247] [INFO] Booting worker with pid: 48179
+2017-09-10 12:58:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:58:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 12:59:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:12:59:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:00:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:00:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:01:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:01:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:02:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:02:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:03:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:03:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:04:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:04:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:05:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:05:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:06:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:06:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:07:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:07:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:08:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:08:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:09:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:09:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:10:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:10:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:11:42 [48179:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:11:42 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:12:15 [48179:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:12:27 [48179:gunicorn.error:247] [INFO] Worker exiting (pid: 48179)
+2017-09-10 13:12:27 [48268:gunicorn.error:247] [INFO] Booting worker with pid: 48268
+2017-09-10 13:13:08 [48268:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:13:12 [48268:gunicorn.error:247] [INFO] Worker exiting (pid: 48268)
+2017-09-10 13:13:12 [48277:gunicorn.error:247] [INFO] Booting worker with pid: 48277
+2017-09-10 13:13:31 [48277:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:13:42 [48277:gunicorn.error:247] [INFO] Worker exiting (pid: 48277)
+2017-09-10 13:13:42 [48285:gunicorn.error:247] [INFO] Booting worker with pid: 48285
+2017-09-10 13:14:17 [48285:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:14:28 [48285:gunicorn.error:247] [INFO] Worker exiting (pid: 48285)
+2017-09-10 13:14:28 [48293:gunicorn.error:247] [INFO] Booting worker with pid: 48293
+2017-09-10 13:14:40 [48293:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:14:43 [48293:gunicorn.error:247] [INFO] Worker exiting (pid: 48293)
+2017-09-10 13:14:43 [48297:gunicorn.error:247] [INFO] Booting worker with pid: 48297
+2017-09-10 13:14:49 [48297:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:14:56 [48297:gunicorn.error:247] [INFO] Worker exiting (pid: 48297)
+2017-09-10 13:14:56 [48302:gunicorn.error:247] [INFO] Booting worker with pid: 48302
+2017-09-10 13:14:57 [48302:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:14:57 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:15:15 [48302:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:15:27 [48302:gunicorn.error:247] [INFO] Worker exiting (pid: 48302)
+2017-09-10 13:15:27 [48311:gunicorn.error:247] [INFO] Booting worker with pid: 48311
+2017-09-10 13:15:40 [48311:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:15:42 [48311:gunicorn.error:247] [INFO] Worker exiting (pid: 48311)
+2017-09-10 13:15:42 [48317:gunicorn.error:247] [INFO] Booting worker with pid: 48317
+2017-09-10 13:15:53 [48317:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:15:57 [48317:gunicorn.error:247] [INFO] Worker exiting (pid: 48317)
+2017-09-10 13:15:57 [48322:gunicorn.error:247] [INFO] Booting worker with pid: 48322
+2017-09-10 13:16:15 [48322:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:16:27 [48322:gunicorn.error:247] [INFO] Worker exiting (pid: 48322)
+2017-09-10 13:16:27 [48332:gunicorn.error:247] [INFO] Booting worker with pid: 48332
+2017-09-10 13:16:37 [48332:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:16:40 [48332:gunicorn.error:247] [INFO] Worker exiting (pid: 48332)
+2017-09-10 13:16:40 [48337:gunicorn.error:247] [INFO] Booting worker with pid: 48337
+2017-09-10 13:16:40 [48337:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:16:40 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:17:53 [48337:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:17:55 [48337:gunicorn.error:247] [INFO] Worker exiting (pid: 48337)
+2017-09-10 13:17:55 [48351:gunicorn.error:247] [INFO] Booting worker with pid: 48351
+2017-09-10 13:18:51 [48351:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:18:55 [48351:gunicorn.error:247] [INFO] Worker exiting (pid: 48351)
+2017-09-10 13:18:55 [48383:gunicorn.error:247] [INFO] Booting worker with pid: 48383
+2017-09-10 13:18:58 [48383:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:18:58 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:19:11 [48383:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:19:13 [48383:gunicorn.error:247] [INFO] Worker exiting (pid: 48383)
+2017-09-10 13:19:13 [48394:gunicorn.error:247] [INFO] Booting worker with pid: 48394
+2017-09-10 13:19:23 [48394:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:19:26 [48394:gunicorn.error:247] [INFO] Worker exiting (pid: 48394)
+2017-09-10 13:19:26 [48398:gunicorn.error:247] [INFO] Booting worker with pid: 48398
+2017-09-10 13:19:26 [48398:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:19:26 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:19:44 [48398:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:19:46 [48398:gunicorn.error:247] [INFO] Worker exiting (pid: 48398)
+2017-09-10 13:19:46 [48403:gunicorn.error:247] [INFO] Booting worker with pid: 48403
+2017-09-10 13:19:46 [48403:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 47)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 47
+    app.logger.debug(print(data))
+                         ^
+SyntaxError: invalid syntax
+2017-09-10 13:19:46 [48403:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:19:46 +0200] "GET /longview HTTP/1.1" 500 896 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:20:13 [48403:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:20:16 [48403:gunicorn.error:247] [INFO] Worker exiting (pid: 48403)
+2017-09-10 13:20:16 [48409:gunicorn.error:247] [INFO] Booting worker with pid: 48409
+2017-09-10 13:20:17 [48409:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:20:17 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:20:19 [48409:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:20:19 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:20:21 [48409:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:20:21 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:21:16 [48605:gunicorn.error:247] [INFO] Starting gunicorn 19.7.1
+2017-09-10 13:21:16 [48605:gunicorn.error:247] [INFO] Listening at: http://192.168.178.24:5000 (48605)
+2017-09-10 13:21:16 [48605:gunicorn.error:247] [INFO] Using worker: sync
+2017-09-10 13:21:16 [48608:gunicorn.error:247] [INFO] Booting worker with pid: 48608
+2017-09-10 13:21:23 [48608:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:21:23 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:21:34 [48608:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:21:34 [48409:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:21:36 [48409:gunicorn.error:247] [INFO] Worker exiting (pid: 48409)
+2017-09-10 13:21:36 [48613:gunicorn.error:247] [INFO] Booting worker with pid: 48613
+2017-09-10 13:21:36 [48608:gunicorn.error:247] [INFO] Worker exiting (pid: 48608)
+2017-09-10 13:21:36 [48614:gunicorn.error:247] [INFO] Booting worker with pid: 48614
+2017-09-10 13:21:36 [48614:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:21:36 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:21:38 [48614:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:21:38 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:22:24 [48614:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:22:24 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:22:47 [48613:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:22:47 [48614:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:22:51 [48613:gunicorn.error:247] [INFO] Worker exiting (pid: 48613)
+2017-09-10 13:22:51 [48626:gunicorn.error:247] [INFO] Booting worker with pid: 48626
+2017-09-10 13:22:53 [48614:gunicorn.error:247] [INFO] Worker exiting (pid: 48614)
+2017-09-10 13:22:53 [48627:gunicorn.error:247] [INFO] Booting worker with pid: 48627
+2017-09-10 13:22:53 [48627:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:22:53 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:23:00 [48626:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:01 [48627:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:03 [48627:gunicorn.error:247] [INFO] Worker exiting (pid: 48627)
+2017-09-10 13:23:03 [48632:gunicorn.error:247] [INFO] Booting worker with pid: 48632
+2017-09-10 13:23:03 [48632:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:23:03 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:23:06 [48626:gunicorn.error:247] [INFO] Worker exiting (pid: 48626)
+2017-09-10 13:23:06 [48633:gunicorn.error:247] [INFO] Booting worker with pid: 48633
+2017-09-10 13:23:16 [48633:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:16 [48632:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:18 [48632:gunicorn.error:247] [INFO] Worker exiting (pid: 48632)
+2017-09-10 13:23:18 [48641:gunicorn.error:247] [INFO] Booting worker with pid: 48641
+2017-09-10 13:23:18 [48641:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:23:18 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:23:22 [48633:gunicorn.error:247] [INFO] Worker exiting (pid: 48633)
+2017-09-10 13:23:22 [48642:gunicorn.error:247] [INFO] Booting worker with pid: 48642
+2017-09-10 13:23:49 [48642:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:49 [48641:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:23:52 [48642:gunicorn.error:247] [INFO] Worker exiting (pid: 48642)
+2017-09-10 13:23:52 [48648:gunicorn.error:247] [INFO] Booting worker with pid: 48648
+2017-09-10 13:23:52 [48641:gunicorn.error:247] [INFO] Worker exiting (pid: 48641)
+2017-09-10 13:23:52 [48649:gunicorn.error:247] [INFO] Booting worker with pid: 48649
+2017-09-10 13:23:52 [48649:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:23:52 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:25:17 [48648:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:25:18 [48649:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:25:22 [48648:gunicorn.error:247] [INFO] Worker exiting (pid: 48648)
+2017-09-10 13:25:22 [48661:gunicorn.error:247] [INFO] Booting worker with pid: 48661
+2017-09-10 13:25:22 [48649:gunicorn.error:247] [INFO] Worker exiting (pid: 48649)
+2017-09-10 13:25:22 [48662:gunicorn.error:247] [INFO] Booting worker with pid: 48662
+2017-09-10 13:29:32 [48661:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:29:32 [48662:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:29:37 [48661:gunicorn.error:247] [INFO] Worker exiting (pid: 48661)
+2017-09-10 13:29:37 [48662:gunicorn.error:247] [INFO] Worker exiting (pid: 48662)
+2017-09-10 13:29:37 [48681:gunicorn.error:247] [INFO] Booting worker with pid: 48681
+2017-09-10 13:29:37 [48682:gunicorn.error:247] [INFO] Booting worker with pid: 48682
+2017-09-10 13:29:37 [48681:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 54)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 54
+    echo $longterm['CPU.cpu0.system'];
+         ^
+SyntaxError: invalid syntax
+2017-09-10 13:29:37 [48682:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 54)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 54
+    echo $longterm['CPU.cpu0.system'];
+         ^
+SyntaxError: invalid syntax
+2017-09-10 13:30:43 [48681:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:30:43 [48682:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:30:52 [48681:gunicorn.error:247] [INFO] Worker exiting (pid: 48681)
+2017-09-10 13:30:52 [48682:gunicorn.error:247] [INFO] Worker exiting (pid: 48682)
+2017-09-10 13:30:52 [48691:gunicorn.error:247] [INFO] Booting worker with pid: 48691
+2017-09-10 13:30:52 [48692:gunicorn.error:247] [INFO] Booting worker with pid: 48692
+2017-09-10 13:30:52 [48691:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 53)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 53
+    echo $longterm['CPU.cpu0.system'];
+         ^
+SyntaxError: invalid syntax
+2017-09-10 13:30:52 [48692:gunicorn.error:253] [ERROR] invalid syntax (app.py, line 53)
+Traceback (most recent call last):
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/benmatheja/workspace/longview-backend/longview-backend-env/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/Users/benmatheja/workspace/longview-backend/app.py", line 53
+    echo $longterm['CPU.cpu0.system'];
+         ^
+SyntaxError: invalid syntax
+2017-09-10 13:31:25 [48691:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:31:25 [48692:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:31:34 [48692:gunicorn.error:247] [INFO] Worker exiting (pid: 48692)
+2017-09-10 13:31:34 [48698:gunicorn.error:247] [INFO] Booting worker with pid: 48698
+2017-09-10 13:31:34 [48698:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:31:34 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:31:36 [48698:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:31:36 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:31:37 [48691:gunicorn.error:247] [INFO] Worker exiting (pid: 48691)
+2017-09-10 13:31:37 [48699:gunicorn.error:247] [INFO] Booting worker with pid: 48699
+2017-09-10 13:31:42 [48699:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:31:42 [48698:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:31:44 [48698:gunicorn.error:247] [INFO] Worker exiting (pid: 48698)
+2017-09-10 13:31:44 [48705:gunicorn.error:247] [INFO] Booting worker with pid: 48705
+2017-09-10 13:31:44 [48705:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:31:44 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:31:53 [48699:gunicorn.error:247] [INFO] Worker exiting (pid: 48699)
+2017-09-10 13:31:53 [48708:gunicorn.error:247] [INFO] Booting worker with pid: 48708
+2017-09-10 13:32:02 [48708:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:32:02 [48705:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:32:06 [48705:gunicorn.error:247] [INFO] Worker exiting (pid: 48705)
+2017-09-10 13:32:06 [48713:gunicorn.error:247] [INFO] Booting worker with pid: 48713
+2017-09-10 13:32:06 [48713:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:32:06 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:32:08 [48708:gunicorn.error:247] [INFO] Worker exiting (pid: 48708)
+2017-09-10 13:32:08 [48714:gunicorn.error:247] [INFO] Booting worker with pid: 48714
+2017-09-10 13:32:17 [48714:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:32:17 [48713:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:32:19 [48713:gunicorn.error:247] [INFO] Worker exiting (pid: 48713)
+2017-09-10 13:32:19 [48720:gunicorn.error:247] [INFO] Booting worker with pid: 48720
+2017-09-10 13:32:19 [48720:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:32:19 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:32:23 [48714:gunicorn.error:247] [INFO] Worker exiting (pid: 48714)
+2017-09-10 13:32:23 [48721:gunicorn.error:247] [INFO] Booting worker with pid: 48721
+2017-09-10 13:33:05 [48720:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:06 [48721:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:08 [48721:gunicorn.error:247] [INFO] Worker exiting (pid: 48721)
+2017-09-10 13:33:08 [48729:gunicorn.error:247] [INFO] Booting worker with pid: 48729
+2017-09-10 13:33:09 [48720:gunicorn.error:247] [INFO] Worker exiting (pid: 48720)
+2017-09-10 13:33:09 [48730:gunicorn.error:247] [INFO] Booting worker with pid: 48730
+2017-09-10 13:33:09 [48730:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:33:09 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:33:16 [48730:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:33:16 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:33:29 [48729:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:30 [48730:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:31 [48730:gunicorn.error:247] [INFO] Worker exiting (pid: 48730)
+2017-09-10 13:33:31 [48736:gunicorn.error:247] [INFO] Booting worker with pid: 48736
+2017-09-10 13:33:32 [48736:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:33:32 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:33:38 [48729:gunicorn.error:247] [INFO] Worker exiting (pid: 48729)
+2017-09-10 13:33:38 [48738:gunicorn.error:247] [INFO] Booting worker with pid: 48738
+2017-09-10 13:33:40 [48736:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:40 [48738:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:42 [48736:gunicorn.error:247] [INFO] Worker exiting (pid: 48736)
+2017-09-10 13:33:42 [48743:gunicorn.error:247] [INFO] Booting worker with pid: 48743
+2017-09-10 13:33:42 [48743:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:33:42 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:33:50 [48743:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:33:52 [48743:gunicorn.error:247] [INFO] Worker exiting (pid: 48743)
+2017-09-10 13:33:52 [48748:gunicorn.error:247] [INFO] Booting worker with pid: 48748
+2017-09-10 13:33:52 [48748:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:33:52 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:33:53 [48738:gunicorn.error:247] [INFO] Worker exiting (pid: 48738)
+2017-09-10 13:33:53 [48749:gunicorn.error:247] [INFO] Booting worker with pid: 48749
+2017-09-10 13:35:00 [48749:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:35:00 [48748:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:35:03 [48748:gunicorn.error:247] [INFO] Worker exiting (pid: 48748)
+2017-09-10 13:35:03 [48759:gunicorn.error:247] [INFO] Booting worker with pid: 48759
+2017-09-10 13:35:03 [48759:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:35:03 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:35:08 [48749:gunicorn.error:247] [INFO] Worker exiting (pid: 48749)
+2017-09-10 13:35:08 [48762:gunicorn.error:247] [INFO] Booting worker with pid: 48762
+2017-09-10 13:35:23 [48759:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:35:23 +0200] "GET /longview HTTP/1.1" 500 291 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:35:33 [48762:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:35:33 [48759:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:35:35 [48759:gunicorn.error:247] [INFO] Worker exiting (pid: 48759)
+2017-09-10 13:35:35 [48767:gunicorn.error:247] [INFO] Booting worker with pid: 48767
+2017-09-10 13:35:35 [48767:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:35:35 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:35:39 [48762:gunicorn.error:247] [INFO] Worker exiting (pid: 48762)
+2017-09-10 13:35:39 [48768:gunicorn.error:247] [INFO] Booting worker with pid: 48768
+2017-09-10 13:36:04 [48767:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:36:04 [48768:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:36:05 [48767:gunicorn.error:247] [INFO] Worker exiting (pid: 48767)
+2017-09-10 13:36:05 [48779:gunicorn.error:247] [INFO] Booting worker with pid: 48779
+2017-09-10 13:36:06 [48779:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:36:06 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:36:09 [48768:gunicorn.error:247] [INFO] Worker exiting (pid: 48768)
+2017-09-10 13:36:09 [48780:gunicorn.error:247] [INFO] Booting worker with pid: 48780
+2017-09-10 13:36:26 [48779:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:36:26 [48780:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:36:32 [48779:gunicorn.error:247] [INFO] Worker exiting (pid: 48779)
+2017-09-10 13:36:32 [48796:gunicorn.error:247] [INFO] Booting worker with pid: 48796
+2017-09-10 13:36:32 [48796:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:36:32 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:36:39 [48780:gunicorn.error:247] [INFO] Worker exiting (pid: 48780)
+2017-09-10 13:36:39 [48802:gunicorn.error:247] [INFO] Booting worker with pid: 48802
+2017-09-10 13:37:02 [48802:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:37:02 [48796:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:37:09 [48802:gunicorn.error:247] [INFO] Worker exiting (pid: 48802)
+2017-09-10 13:37:09 [48825:gunicorn.error:247] [INFO] Booting worker with pid: 48825
+2017-09-10 13:37:17 [48796:gunicorn.error:247] [INFO] Worker exiting (pid: 48796)
+2017-09-10 13:37:17 [48829:gunicorn.error:247] [INFO] Booting worker with pid: 48829
+2017-09-10 13:38:00 [48829:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:38:00 [48825:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:38:02 [48829:gunicorn.error:247] [INFO] Worker exiting (pid: 48829)
+2017-09-10 13:38:02 [48841:gunicorn.error:247] [INFO] Booting worker with pid: 48841
+2017-09-10 13:38:03 [48841:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:38:03 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:38:09 [48825:gunicorn.error:247] [INFO] Worker exiting (pid: 48825)
+2017-09-10 13:38:09 [48842:gunicorn.error:247] [INFO] Booting worker with pid: 48842
+2017-09-10 13:39:01 [48841:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:39:01 [48842:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:39:03 [48841:gunicorn.error:247] [INFO] Worker exiting (pid: 48841)
+2017-09-10 13:39:03 [48851:gunicorn.error:247] [INFO] Booting worker with pid: 48851
+2017-09-10 13:39:03 [48851:gunicorn.access:327] [INFO] 192.168.178.24 - - [10/Sep/2017:13:39:03 +0200] "GET /longview HTTP/1.1" 200 27 "-" "PostmanRuntime/6.3.2"
+2017-09-10 13:39:09 [48842:gunicorn.error:247] [INFO] Worker exiting (pid: 48842)
+2017-09-10 13:39:09 [48852:gunicorn.error:247] [INFO] Booting worker with pid: 48852
+2017-09-10 13:40:47 [48851:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:40:47 [48852:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:40:48 [48851:gunicorn.error:247] [INFO] Worker exiting (pid: 48851)
+2017-09-10 13:40:48 [48878:gunicorn.error:247] [INFO] Booting worker with pid: 48878
+2017-09-10 13:40:52 [48878:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:40:54 [48852:gunicorn.error:247] [INFO] Worker exiting (pid: 48852)
+2017-09-10 13:40:54 [48884:gunicorn.error:247] [INFO] Booting worker with pid: 48884
+2017-09-10 13:41:04 [48878:gunicorn.error:247] [INFO] Worker exiting (pid: 48878)
+2017-09-10 13:41:04 [48887:gunicorn.error:247] [INFO] Booting worker with pid: 48887
+2017-09-10 13:41:08 [48887:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:41:09 [48884:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:41:09 [48884:gunicorn.error:247] [INFO] Worker exiting (pid: 48884)
+2017-09-10 13:41:09 [48890:gunicorn.error:247] [INFO] Booting worker with pid: 48890
+2017-09-10 13:41:19 [48887:gunicorn.error:247] [INFO] Worker exiting (pid: 48887)
+2017-09-10 13:41:19 [48892:gunicorn.error:247] [INFO] Booting worker with pid: 48892
+2017-09-10 13:41:44 [48892:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:41:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:41:59 [48890:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:41:59 [48892:gunicorn.error:247] [INFO] Worker reloading: /Users/benmatheja/workspace/longview-backend/app.py modified
+2017-09-10 13:41:59 [48892:gunicorn.error:247] [INFO] Worker exiting (pid: 48892)
+2017-09-10 13:41:59 [48899:gunicorn.error:247] [INFO] Booting worker with pid: 48899
+2017-09-10 13:42:10 [48890:gunicorn.error:247] [INFO] Worker exiting (pid: 48890)
+2017-09-10 13:42:10 [48900:gunicorn.error:247] [INFO] Booting worker with pid: 48900
+2017-09-10 13:42:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:42:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:43:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:43:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:44:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:44:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:45:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:45:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:46:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:46:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:47:09 [48605:gunicorn.error:247] [INFO] Handling signal: winch
+2017-09-10 13:47:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:47:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
+2017-09-10 13:48:44 [48899:gunicorn.access:327] [INFO] 192.168.178.44 - - [10/Sep/2017:13:48:44 +0200] "POST /longview HTTP/1.1" 200 27 "-" "Linode Longview 1.1.5 client: 1337"
