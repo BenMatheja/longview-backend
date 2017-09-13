@@ -42,7 +42,7 @@ def setup_logging():
 
 @app.before_request
 def log_request_info():
-    app.logger.debug('Headers: %s', request.headers)
+    # app.logger.debug('Headers: %s', request.headers)
     # app.logger.debug('Body: %s', request.get_data())
     g.begin_time = datetime.datetime.now()
     if 'trace-id' not in request.headers:
