@@ -3,17 +3,37 @@ import gzip
 import json
 import logging
 import uuid
+from functools import wraps
 from logging.handlers import RotatingFileHandler
 
-from flask import Flask, request, jsonify, g
+from flask import Flask, request, jsonify, g, abort
+
+import settings
 
 app = Flask(__name__)
+
+
+def require_appkey(view_function):
+    @wraps(view_function)
+    # the new, post-decoration function. Note *args and **kwargs here.
+    def decorated_function(*args, **kwargs):
+        if 'User-Agent' not in request.headers:
+            abort(401)
+        else:
+            sent_key = request.headers.get('User-Agent').split("client: ", 1)[1].strip()
+            app.logger.info('compare sent key ' + sent_key + ' with ' + settings.APPKEY)
+        if sent_key == settings.APPKEY:
+            return view_function(*args, **kwargs)
+        else:
+            abort(401)
+
+    return decorated_function
 
 
 @app.before_first_request
 def setup_logging():
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",
-                              "%Y-%m-%d %H:%M:%S")
+                                  "%Y-%m-%d %H:%M:%S")
     handler = RotatingFileHandler('longview-backend.log', maxBytes=2000000, backupCount=1)
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
@@ -22,7 +42,7 @@ def setup_logging():
 
 @app.before_request
 def log_request_info():
-    # app.logger.debug('Headers: %s', request.headers)
+    app.logger.debug('Headers: %s', request.headers)
     # app.logger.debug('Body: %s', request.get_data())
     g.begin_time = datetime.datetime.now()
     if 'trace-id' not in request.headers:
@@ -36,12 +56,14 @@ def log_request_info():
 
 
 @app.route('/longview', methods=['POST'])
+@require_appkey
 def handle_post():
     if 'User-Agent' not in request.headers:
-        raise
-    
-    file = request.files.get('data').stream
-    uncompressed = gzip.GzipFile(fileobj=file, mode='rb')
+        abort(500)
+    if 'data' not in request.files:
+        abort(500)
+
+    uncompressed = gzip.GzipFile(fileobj=request.files.get('data').stream, mode='rb')
     with uncompressed as fin:
         json_bytes = fin.read()
         json_str = json_bytes.decode('utf-8')
@@ -57,6 +79,7 @@ def handle_post():
 
 
 @app.route('/longview', methods=['GET'])
+@require_appkey
 def handle_get():
     with open('payload.json') as data_file:
         data = json.load(data_file)
@@ -70,7 +93,16 @@ def handle_get():
 
 @app.errorhandler(500)
 def internal_error(exception):
+    log_info(g.begin_time, g.real_ip, 'error', g.event_id,
+             'internal error occured')
     return jsonify({'status': "internal error"}), 500
+
+
+@app.errorhandler(401)
+def unauthorized(exception):
+    log_info(g.begin_time, g.real_ip, 'error', g.event_id,
+             'unauthorized')
+    return jsonify({'status': "unauthorized"}), 401
 
 
 def process_json(data):
@@ -80,14 +112,15 @@ def process_json(data):
     event_object = {}
 
     event_object['host'] = instant['SysInfo.hostname']
-    event_object['timestamp'] = data["payload"][0]['timestamp']
+    event_object['timestamp'] = datetime.datetime.utcfromtimestamp(data["payload"][0]['timestamp']).isoformat()
 
     # Omit Keys for Processes
     for key, value in longterm.iteritems():
         if 'Processes.' not in key:
             event_object[key] = value
 
-    #app.logger.debug(json.dumps(event_object))
+    with open(settings.EVENT_LOG, 'a') as the_file:
+        the_file.write(json.dumps(event_object) + '\n')
 
 
 def log_info(begin_time, request_ip, status, trace_id, message, service='handle_post'):
