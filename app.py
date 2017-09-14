@@ -84,6 +84,7 @@ def handle_get():
     with open('payload.json') as data_file:
         data = json.load(data_file)
     process_json(data)
+
     log_info(g.begin_time, g.real_ip, 'accepted', g.event_id,
              'Processing completed')
 
@@ -93,14 +94,14 @@ def handle_get():
 
 @app.errorhandler(500)
 def internal_error(exception):
-    log_info(g.begin_time, g.real_ip, 'error', g.event_id,
+    log_info(g.begin_time, g.real_ip, 'rejected', g.event_id,
              'internal error occured')
     return jsonify({'status': "internal error"}), 500
 
 
 @app.errorhandler(401)
 def unauthorized(exception):
-    log_info(g.begin_time, g.real_ip, 'error', g.event_id,
+    log_info(g.begin_time, g.real_ip, 'rejected', g.event_id,
              'unauthorized')
     return jsonify({'status': "unauthorized"}), 401
 
@@ -119,8 +120,14 @@ def process_json(data):
         if 'Processes.' not in key:
             event_object[key] = value
 
-    with open(settings.EVENT_LOG, 'a') as the_file:
-        the_file.write(json.dumps(event_object) + '\n')
+    # Use Logrotation after 2MB
+    backend_event_logger = logging.getLogger('backend_event_logger')
+    backend_event_logger.setLevel(logging.INFO)
+    handler = logging.handlers.RotatingFileHandler(settings.EVENT_LOG, maxBytes=2000000, backupCount=1)
+    backend_event_logger.addHandler(handler)
+    formatter = logging.Formatter("%(message)s")
+    handler.setFormatter(formatter)
+    backend_event_logger.info(json.dumps(event_object))
 
 
 def log_info(begin_time, request_ip, status, trace_id, message, service='handle_post'):

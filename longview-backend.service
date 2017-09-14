@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn Application Server running Longview-Backend
+After=syslog.target network.target electrum.service
+
+[Service]
+User=longview
+Group=longview
+ExecStart=/bin/bash -c "source /opt/longview-backend/longview-backend-env/bin/activate ; chdir /opt/longview-backend ; exec gunicorn app:app --workers 4 --bind localhost:8060  --log-config gunicorn_log.conf"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
