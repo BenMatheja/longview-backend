@@ -5,13 +5,23 @@ A Flask Restful Service to obtain performance metrics from the longview agent
 Previously started as PHP backend for custom Linode Longview implementation.
 Used to obtain performance metrics, attach them via filebeat to the central ELK instance.
 
+## Installation
+
 ```
-
-useradd -s /bin/false -r <username>
-
-cp todoist-flask.service /etc/systemd/system/                                              │849-4af9-98f2-60a218c234f9
- 1575  vi /etc/systemd/system/todoist-flask.service
+mkdir /opt/longview-backend
+cd /opt/longview-backend
+git clone git@github.com:BenMatheja/longview-backend.git
+virtualenv longview-backend-env
+pip install -e .
+# 
+useradd -s /bin/false -r longview
+cp longview-backend.service /etc/systemd/system/                                        
+vi /etc/systemd/system/todoist-flask.service
  
- systemctl daemon-reload
- systemctl enable longview-backend
+systemctl daemon-reload
+systemctl enable longview-backend
+systemctl start longview-backend
+systemctl status longview-backend
+ ```
+ 
  
