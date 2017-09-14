@@ -81,9 +81,9 @@ def handle_post():
 @app.route('/longview', methods=['GET'])
 @require_appkey
 def handle_get():
-    with open('payload.json') as data_file:
-        data = json.load(data_file)
-    process_json(data)
+    # with open('payload.json') as data_file:
+    #    data = json.load(data_file)
+    # process_json(data)
 
     log_info(g.begin_time, g.real_ip, 'accepted', g.event_id,
              'Processing completed')
