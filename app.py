@@ -32,12 +32,21 @@ def require_appkey(view_function):
 
 @app.before_first_request
 def setup_logging():
+    # Application Logging
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",
                                   "%Y-%m-%d %H:%M:%S")
     handler = RotatingFileHandler('longview-backend.log', maxBytes=2000000, backupCount=1)
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
     app.logger.addHandler(handler)
+
+    # Event Logging Output
+    backend_event_logger = logging.getLogger('backend_event_logger')
+    backend_event_logger.setLevel(logging.DEBUG)
+    handler = logging.handlers.RotatingFileHandler(settings.EVENT_LOG, maxBytes=2000000, backupCount=1)
+    backend_event_logger.addHandler(handler)
+    formatter = logging.Formatter("%(message)s")
+    handler.setFormatter(formatter)
 
 
 @app.before_request
@@ -81,9 +90,9 @@ def handle_post():
 @app.route('/longview', methods=['GET'])
 @require_appkey
 def handle_get():
-    # with open('payload.json') as data_file:
-    #    data = json.load(data_file)
-    # process_json(data)
+    with open('payload.json') as data_file:
+        data = json.load(data_file)
+    process_json(data)
 
     log_info(g.begin_time, g.real_ip, 'accepted', g.event_id,
              'Processing completed')
@@ -119,15 +128,8 @@ def process_json(data):
     for key, value in longterm.iteritems():
         if 'Processes.' not in key:
             event_object[key] = value
-
-    # Use Logrotation after 2MB
     backend_event_logger = logging.getLogger('backend_event_logger')
-    backend_event_logger.setLevel(logging.INFO)
-    handler = logging.handlers.RotatingFileHandler(settings.EVENT_LOG, maxBytes=2000000, backupCount=1)
-    backend_event_logger.addHandler(handler)
-    formatter = logging.Formatter("%(message)s")
-    handler.setFormatter(formatter)
-    backend_event_logger.info(json.dumps(event_object))
+    backend_event_logger.debug(json.dumps(event_object))
 
 
 def log_info(begin_time, request_ip, status, trace_id, message, service='handle_post'):
