@@ -21,7 +21,7 @@ def require_appkey(view_function):
             abort(401)
         else:
             sent_key = request.headers.get('User-Agent').split("client: ", 1)[1].strip()
-            app.logger.info('compare sent key ' + sent_key + ' with ' + settings.APPKEY)
+            #app.logger.info('compare sent key ' + sent_key + ' with ' + settings.APPKEY)
         if sent_key == settings.APPKEY:
             return view_function(*args, **kwargs)
         else:
@@ -90,9 +90,9 @@ def handle_post():
 @app.route('/longview', methods=['GET'])
 @require_appkey
 def handle_get():
-    with open('payload.json') as data_file:
-        data = json.load(data_file)
-    process_json(data)
+    #with open('payload.json') as data_file:
+    #    data = json.load(data_file)
+    #process_json(data)
 
     log_info(g.begin_time, g.real_ip, 'accepted', g.event_id,
              'Processing completed')
@@ -123,6 +123,9 @@ def process_json(data):
 
     event_object['host'] = instant['SysInfo.hostname']
     event_object['timestamp'] = datetime.datetime.utcfromtimestamp(data["payload"][0]['timestamp']).isoformat()
+
+    log_info(g.begin_time, g.real_ip, 'processing', g.event_id,
+             'Take ' + data["payload"][0]['timestamp'] + ' and write ' + event_object['timestamp'])
 
     # Omit Keys for Processes
     for key, value in longterm.iteritems():
