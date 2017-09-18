@@ -125,7 +125,7 @@ def process_json(data):
     event_object['timestamp'] = datetime.datetime.utcfromtimestamp(data["payload"][0]['timestamp']).isoformat()
 
     log_info(g.begin_time, g.real_ip, 'processing', g.event_id,
-             'Take ' + data["payload"][0]['timestamp'] + ' and write ' + event_object['timestamp'])
+             'Take ' + data["payload"][0]['timestamp'].__str__() + ' and write ' + event_object['timestamp'].__str__())
 
     # Omit Keys for Processes
     for key, value in longterm.iteritems():
