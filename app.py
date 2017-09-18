@@ -21,7 +21,7 @@ def require_appkey(view_function):
             abort(401)
         else:
             sent_key = request.headers.get('User-Agent').split("client: ", 1)[1].strip()
-            #app.logger.info('compare sent key ' + sent_key + ' with ' + settings.APPKEY)
+
         if sent_key == settings.APPKEY:
             return view_function(*args, **kwargs)
         else:
@@ -36,7 +36,7 @@ def setup_logging():
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",
                                   "%Y-%m-%d %H:%M:%S")
     handler = RotatingFileHandler('longview-backend.log', maxBytes=2000000, backupCount=1)
-    handler.setLevel(logging.DEBUG)
+    handler.setLevel(logging.INFO)
     handler.setFormatter(formatter)
     app.logger.addHandler(handler)
 
@@ -124,7 +124,7 @@ def process_json(data):
     event_object['host'] = instant['SysInfo.hostname']
     event_object['timestamp'] = datetime.datetime.fromtimestamp(data["payload"][0]['timestamp']).isoformat()
 
-    log_info(g.begin_time, g.real_ip, 'processing', g.event_id,
+    log_debug(g.begin_time, g.real_ip, 'processing', g.event_id,
              'Take ' + data["payload"][0]['timestamp'].__str__() + ' and write ' + event_object['timestamp'].__str__())
 
     # Omit Keys for Processes
