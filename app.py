@@ -122,7 +122,7 @@ def process_json(data):
     event_object = {}
 
     event_object['host'] = instant['SysInfo.hostname']
-    event_object['timestamp'] = datetime.datetime.fromtimestamp(data["payload"][0]['timestamp']).isoformat()
+    event_object['@timestamp'] = datetime.datetime.fromtimestamp(data["payload"][0]['timestamp']).isoformat()
 
     log_debug(g.begin_time, g.real_ip, 'processing', g.event_id,
              'Take ' + data["payload"][0]['timestamp'].__str__() + ' and write ' + event_object['timestamp'].__str__())
