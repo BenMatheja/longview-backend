@@ -138,7 +138,7 @@ def process_json(data):
 
 def transmit_event(data):
     log_info(g.begin_time, g.real_ip, 'processing', g.event_id, 'Transmitting data')
-    res = request.post(settings.TARGET, json=data)
+    res = requests.post(settings.TARGET, json=data)
     log_info(g.begin_time, g.real_ip, 'processing', g.event_id, 'Received Endpoint Response: ' + res.text)
 
 
