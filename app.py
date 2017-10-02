@@ -22,7 +22,7 @@ def require_appkey(view_function):
         else:
             sent_key = request.headers.get('User-Agent').split("client: ", 1)[1].strip()
 
-        if sent_key == settings.APPKEY:
+        if sent_key in settings.APPKEY:
             return view_function(*args, **kwargs)
         else:
             abort(401)
@@ -36,7 +36,7 @@ def setup_logging():
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",
                                   "%Y-%m-%d %H:%M:%S")
     handler = RotatingFileHandler('longview-backend.log', maxBytes=2000000, backupCount=1)
-    handler.setLevel(logging.INFO)
+    handler.setLevel(logging.DEBUG)
     handler.setFormatter(formatter)
     app.logger.addHandler(handler)
 
@@ -51,8 +51,8 @@ def setup_logging():
 
 @app.before_request
 def log_request_info():
-    # app.logger.debug('Headers: %s', request.headers)
-    # app.logger.debug('Body: %s', request.get_data())
+    app.logger.debug('Headers: %s', request.headers)
+    app.logger.debug('Body: %s', request.get_data())
     g.begin_time = datetime.datetime.now()
     if 'trace-id' not in request.headers:
         g.event_id = uuid.uuid4().__str__()
@@ -122,6 +122,7 @@ def process_json(data):
     event_object = {}
 
     event_object['host'] = instant['SysInfo.hostname']
+    event_object['trace-id'] = g.event_id
     event_object['@timestamp'] = datetime.datetime.fromtimestamp(data["payload"][0]['timestamp']).isoformat()
 
     log_debug(g.begin_time, g.real_ip, 'processing', g.event_id,
