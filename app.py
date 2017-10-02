@@ -36,7 +36,7 @@ def setup_logging():
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",
                                   "%Y-%m-%d %H:%M:%S")
     handler = RotatingFileHandler('longview-backend.log', maxBytes=2000000, backupCount=1)
-    handler.setLevel(logging.DEBUG)
+    handler.setLevel(logging.INFO)
     handler.setFormatter(formatter)
     app.logger.addHandler(handler)
 
