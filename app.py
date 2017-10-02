@@ -43,7 +43,7 @@ def setup_logging():
     # Event Logging Output
     backend_event_logger = logging.getLogger('backend_event_logger')
     backend_event_logger.setLevel(logging.DEBUG)
-    handler = logging.handlers.RotatingFileHandler(settings.EVENT_LOG, maxBytes=2000000, backupCount=1)
+    handler = logging.handlers.RotatingFileHandler(settings.EVENT_LOG, maxBytes=50000000, backupCount=1)
     backend_event_logger.addHandler(handler)
     formatter = logging.Formatter("%(message)s")
     handler.setFormatter(formatter)
