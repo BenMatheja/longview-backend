@@ -134,6 +134,7 @@ def process_json(data):
             event_object[key] = value
     backend_event_logger = logging.getLogger('backend_event_logger')
     backend_event_logger.debug(json.dumps(event_object))
+    transmit_event(event_object)
 
 def transmit_event(data):
     log_info(g.begin_time, g.real_ip, 'processing', g.event_id, 'Transmitting data')
