@@ -3,6 +3,7 @@ import gzip
 import json
 import logging
 import uuid
+import requests
 from functools import wraps
 from logging.handlers import RotatingFileHandler
 
@@ -133,6 +134,12 @@ def process_json(data):
             event_object[key] = value
     backend_event_logger = logging.getLogger('backend_event_logger')
     backend_event_logger.debug(json.dumps(event_object))
+
+def transmit_event(data):
+    log_info(g.begin_time, g.real_ip, 'processing', g.event_id, 'Transmitting data')
+    res = request.post(settings.TARGET, json=data)
+    log_info(g.begin_time, g.real_ip, 'processing', g.event_id, 'Received Endpoint Response: ' + res.text)
+
 
 
 def log_info(begin_time, request_ip, status, trace_id, message, service='handle_post'):
